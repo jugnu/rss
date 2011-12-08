@@ -1,0 +1,17 @@
+<div id="tag">
+  Select Language for corresponding feeds: <%= select_tag :language,"<option>Select Language</option><option>English</option><option>French</option><option>German</option>"%>
+
+<%= observe_field :language, :url => { :action => :getfeeds }, :with => :language%>
+</div>
+
+
+
+
+<div id="feeds"></div>
+
+
+<% #select_tag "language","<option>Select Language</option><option>English</option><option>French</option><option>German</option>"  %>
+
+ <% #observe_field :language, :function => "alert ('element changed')" %>
+ 
+
